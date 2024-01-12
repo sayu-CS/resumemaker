@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { featureModule } from 'src/Feature/feature.module';
 
-
+import { appRoutingModule } from './app-routing.module';
 
 
 
@@ -15,6 +15,7 @@ import { featureModule } from 'src/Feature/feature.module';
   imports: [
     BrowserModule,
     featureModule,
+    appRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
