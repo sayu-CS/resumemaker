@@ -19,10 +19,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const data = this.selectedPage.nativeElement.firstChild.data
     
+    //checks which page is calling the header.
     switch (data){
       case 'Login':
         this.hideLogin = true
-        console.log('success')
     }
 
   }

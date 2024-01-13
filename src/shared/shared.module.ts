@@ -5,19 +5,23 @@ import { CommonModule } from "@angular/common";
 import { NormalButtonComponent } from "./buttons/normal-button/normal-button.component";
 import { BodyLandingComponent } from "./body-landing/body-landing.component";
 
+import { RedBorderOnInvalidDirective } from "./Directives/redBorderOnInvalid.directive";
+
 
 
 @NgModule({
     declarations: [
                  HeaderComponent,
                  NormalButtonComponent,
-                 BodyLandingComponent
+                 BodyLandingComponent,
+                RedBorderOnInvalidDirective
                   ],
     imports:[CommonModule],
     exports:[
         HeaderComponent,
         NormalButtonComponent,
-        BodyLandingComponent
+        BodyLandingComponent,
+        RedBorderOnInvalidDirective
     ],
 })
 export class sharedmodule {}

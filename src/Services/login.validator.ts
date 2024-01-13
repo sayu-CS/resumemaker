@@ -23,4 +23,20 @@ export class loginValidator {
       return null; // Password is valid
     };
   }
+
+passwordMatchValidator(): ValidatorFn {
+  return (control: AbstractControl) :{[key: string]:any} | null => {
+    const password = control.get('Password');
+    const reType = control.get('Re-Password');
+    if (password && reType && password?.value !== reType?.value){
+      return {'passwordMissmatched': true};
+    }
+    else{
+      return null;
+    }
+ 
+  }
 }
+
+}
+

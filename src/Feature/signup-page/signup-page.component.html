@@ -1,0 +1,32 @@
+<app-header >✨ Dazzling Login ✨</app-header>
+
+<!-- auth-form.component.html -->
+<form [formGroup]="loginForm" class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-2xl transform transition-transform duration-700 ease-in-out hover:scale-105">
+    <div class="mb-6">
+        <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email:</label>
+        <input appRedBorderOnInvalid type="email" id="email" formControlName="Email" class="w-full p-3 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-pink-500 transition-all duration-500 text-gray-700 placeholder-gray-500 rounded-t-lg" placeholder="Enter your email" />
+        <span *ngIf="!loginForm.get('Email')?.valid && loginForm.get('Email')?.touched" class="text-red-500 text-sm mt-1">Please use a correct email address.</span>
+    </div>
+
+    <div class="mb-6">
+        <label for="password" class="block text-gray-700 text-lg font-semibold mb-2">Password:</label>
+        <input appRedBorderOnInvalid type="password" id="password" formControlName="Password" class="w-full p-3 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-pink-500 transition-all duration-500 text-gray-700 placeholder-gray-500" placeholder="Enter your password" />
+        <span *ngIf="!loginForm.get('Password')?.valid && loginForm.get('Password')?.touched" class="text-red-500 text-sm mt-1">Password format incorrect</span>
+    </div>
+
+    <div class="mb-6">
+        <label for="confirmPassword" class="block text-gray-700 text-lg font-semibold mb-2">Re-type Password:</label>
+        <input appRedBorderOnInvalid type="password" id="confirmPassword" formControlName="Re-Password" class="w-full p-3 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-pink-500 transition-all duration-500 text-gray-700 placeholder-gray-500 rounded-b-lg" placeholder="Re-enter your password" />
+        <span *ngIf="loginForm.hasError('passwordMissmatched') && loginForm.get('Re-Password')?.touched" class="text-red-500 text-sm mt-1">Passwords do not match</span>
+    </div>
+
+    <div class="flex items-center justify-between border-b border-gray-300 mb-6"></div>
+
+    <app-normal-button class="mb-6 block text-center text-gray-700">Already Have an Account?</app-normal-button>
+
+    <button type="button" (click)="onSubmit()" class="w-full p-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-pink-600 hover:to-purple-600">Create Account</button>
+
+    <hr class="my-8 border-b border-gray-300">
+
+    <button type="button" class="w-full p-3 bg-red-500 text-white rounded-full transition-all duration-500 hover:bg-red-600">Login with Google</button>
+</form>
