@@ -5,12 +5,14 @@ import { sharedmodule } from "src/shared/shared.module";
 import { signupPageComponent } from './signup-page/signup-page.component';
 import { featureRoutingModule } from "./feature-routing.module";
 import { ReactiveFormsModule } from "@angular/forms";
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 @NgModule({
     declarations :[
         LandingPageComponent,
-        signupPageComponent
+        signupPageComponent,
+        LoginPageComponent
     ],
     imports:[
         CommonModule,
@@ -23,7 +25,8 @@ import { ReactiveFormsModule } from "@angular/forms";
         sharedmodule,
        signupPageComponent,
         featureRoutingModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        LoginPageComponent
     ]
 }
     )

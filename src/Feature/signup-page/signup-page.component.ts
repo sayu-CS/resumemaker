@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { loginValidator } from 'src/Services/login.validator';
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-signup-page',
   templateUrl: './signup-page.component.html',
   styleUrls: ['./signup-page.component.css']
 })
