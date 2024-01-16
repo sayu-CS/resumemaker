@@ -21,8 +21,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     
     //checks which page is calling the header.
     switch (data){
+      case 'Signup':
+        this.hideLogin = true;
+        break;
       case 'Login':
-        this.hideLogin = true
+        this.hideLogin = true;
+        break;
     }
 
   }

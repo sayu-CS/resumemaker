@@ -5,9 +5,10 @@ import { LandingPageComponent } from "src/Feature/landing-page/landing-page.comp
 
 
 
-const routes: Routes = [{
-path:'', component: LandingPageComponent
-}]
+const routes: Routes = [
+    {path:'', component: LandingPageComponent,},
+    {path:'**', component:LandingPageComponent} //create page not found here
+]
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

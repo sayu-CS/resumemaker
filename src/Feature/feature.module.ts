@@ -6,13 +6,15 @@ import { signupPageComponent } from './signup-page/signup-page.component';
 import { featureRoutingModule } from "./feature-routing.module";
 import { ReactiveFormsModule } from "@angular/forms";
 import { LoginPageComponent } from './login-page/login-page.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
     declarations :[
         LandingPageComponent,
         signupPageComponent,
-        LoginPageComponent
+        LoginPageComponent,
+        HomeComponent
     ],
     imports:[
         CommonModule,
@@ -26,7 +28,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
        signupPageComponent,
         featureRoutingModule,
         ReactiveFormsModule,
-        LoginPageComponent
+        LoginPageComponent,
+        HomeComponent
     ]
 }
     )

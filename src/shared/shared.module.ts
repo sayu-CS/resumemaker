@@ -6,6 +6,7 @@ import { NormalButtonComponent } from "./buttons/normal-button/normal-button.com
 import { BodyLandingComponent } from "./body-landing/body-landing.component";
 
 import { RedBorderOnInvalidDirective } from "./Directives/redBorderOnInvalid.directive";
+import { RouterModule } from "@angular/router";
 
 
 
@@ -16,7 +17,7 @@ import { RedBorderOnInvalidDirective } from "./Directives/redBorderOnInvalid.dir
                  BodyLandingComponent,
                 RedBorderOnInvalidDirective
                   ],
-    imports:[CommonModule],
+    imports:[CommonModule, RouterModule],
     exports:[
         HeaderComponent,
         NormalButtonComponent,
