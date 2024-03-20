@@ -10,6 +10,7 @@ import { RouterModule } from "@angular/router";
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainSideComponent } from './main-side/main-side.component';
 import { MainBodyComponent } from './main-body/main-body.component';
+import { CircularButtonComponenet } from "./buttons/circular-button/circular-button.component";
 
 
 
@@ -21,7 +22,8 @@ import { MainBodyComponent } from './main-body/main-body.component';
                 RedBorderOnInvalidDirective,
                 MainHeaderComponent,
                 MainSideComponent,
-                MainBodyComponent
+                MainBodyComponent,
+                CircularButtonComponenet
                   ],
     imports:[CommonModule, RouterModule],
     exports:[
@@ -31,7 +33,8 @@ import { MainBodyComponent } from './main-body/main-body.component';
         RedBorderOnInvalidDirective,
         MainHeaderComponent,
         MainSideComponent,
-        MainBodyComponent
+        MainBodyComponent,
+        CircularButtonComponenet
     ],
 })
 export class sharedmodule {}

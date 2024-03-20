@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-header.component.css']
 })
 export class MainHeaderComponent {
+ 
+  hidecontent: Boolean = true;
+  hideContentHam: Boolean = true;
 
+onCreateClicked(){
+this.hidecontent = !this.hidecontent;
+}
+
+onHamClicked(){
+  this.hideContentHam = !this.hideContentHam;
+  }
 }
