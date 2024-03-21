@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { headerDrawerChange } from 'src/Services/headerDrawerChange.service';
 
 @Component({
   selector: 'app-main-header',
@@ -7,14 +8,17 @@ import { Component } from '@angular/core';
 })
 export class MainHeaderComponent {
  
-  hidecontent: Boolean = true;
-  hideContentHam: Boolean = true;
+  constructor(private header: headerDrawerChange){}
+
+  hidecontent: Boolean = this.header.hidecontent;
+  hideContentHam: Boolean = this.header.hideContentHam;
 
 onCreateClicked(){
-this.hidecontent = !this.hidecontent;
+  this.hidecontent = this.header.onCreateClicked();
 }
 
 onHamClicked(){
-  this.hideContentHam = !this.hideContentHam;
+ this.hideContentHam = this.header.onHamClicked();
   }
+
 }

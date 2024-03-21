@@ -1,7 +1,24 @@
-<div>
-    left
-</div>
 
-<div>
-    right all your resumes
+
+<div class="flex align-content-between space-x-4">
+    <!-- Left arrow button -->
+    <button (click)="moveLeft()" class="rounded-full hover:bg-green-100 focus:outline-none focus:bg-gray-700 transition duration-300 ease-in-out p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+        </svg>
+    </button>
+    
+    <!-- Content area -->
+    <div class="flex items-center space-x-4">
+        <div class="text-green-500">{{ currentContent }}</div>
+        <div class="text-green-500">{{ currentContent1 ? currentContent1 : "...." }}</div>
+        <div class="text-green-500">{{ currentContent2 ? currentContent2 : "...." }}</div>
+    </div>
+    
+    <!-- Right arrow button -->
+    <button (click)="moveRight()" class="hover:bg-green-100 focus:outline-none focus:bg-gray-700 transition duration-300 ease-in-out p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+        </svg>
+    </button>
 </div>
