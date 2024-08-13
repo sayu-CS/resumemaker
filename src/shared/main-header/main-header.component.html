@@ -3,7 +3,7 @@
     <div class="flex items-center">
       <!-- Hamburger icon with margin -->
       <button (click)="onHamClicked()"> <div class="mr-8"> <!-- Increased margin not related-->
-        <svg  (onclick)="onHamClicked()" class="h-6 w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg  class="h-6 w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </div></button>
@@ -51,7 +51,7 @@
   <!-- side panel-->
   <div *ngIf="!hideContentHam" class="absolute top-20 left-0 h-screen w-60 bg-gray-950  md:flex md:w-64 md:translate-x-0 transition duration-300 ease-in-out">
     <ul class="flex flex-col items-center space-y-4 p-4">
-      <li><a (click)="onHamClicked()" class="text-white hover:text-gray-200">Link 1</a></li>
+      <li><a class="text-white hover:text-gray-200">Link 1</a></li>
       <li><a href="#" class="text-white hover:text-gray-200">Link 2</a></li>
       <li><a href="#" class="text-white hover:text-gray-200">Link 3</a></li>
     </ul>

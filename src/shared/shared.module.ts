@@ -11,6 +11,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainSideComponent } from './main-side/main-side.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { CircularButtonComponenet } from "./buttons/circular-button/circular-button.component";
+import { mbacComponent } from "./main-body-arrow-content/mbac.component";
 
 
 
@@ -23,7 +24,8 @@ import { CircularButtonComponenet } from "./buttons/circular-button/circular-but
                 MainHeaderComponent,
                 MainSideComponent,
                 MainBodyComponent,
-                CircularButtonComponenet
+                CircularButtonComponenet,
+                mbacComponent
                   ],
     imports:[CommonModule, RouterModule],
     exports:[
@@ -34,7 +36,8 @@ import { CircularButtonComponenet } from "./buttons/circular-button/circular-but
         MainHeaderComponent,
         MainSideComponent,
         MainBodyComponent,
-        CircularButtonComponenet
+        CircularButtonComponenet,
+        mbacComponent
     ],
 })
 export class sharedmodule {}
