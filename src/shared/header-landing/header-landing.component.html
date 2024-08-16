@@ -13,7 +13,7 @@
       </div>
       <!--logo resides above this comment-->
 <div class="hidden lg:flex">
-      <app-normal-button>Home</app-normal-button>
+      <app-normal-button routeValue="/home">Home</app-normal-button>
       <app-normal-button>Product</app-normal-button>
       <app-normal-button>Service</app-normal-button>
       <app-normal-button>For recruiter</app-normal-button>
@@ -57,10 +57,10 @@
               <div class="space-y-2 py-6">
                 <div class="-mx-3">
                 </div>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                <app-normal-button routeValue="/home">Home</app-normal-button>
+      <app-normal-button>Product</app-normal-button>
+      <app-normal-button>Service</app-normal-button>
+      <app-normal-button>For recruiter</app-normal-button>
               </div>
               <div *ngIf="!hideLogin" class="py-6 justify-content-between">
                 <a routerLink='/login' class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>

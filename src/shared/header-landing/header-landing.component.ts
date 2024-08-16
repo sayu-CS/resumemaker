@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-landing-header',
+  templateUrl: './header-landing.component.html',
+  styleUrls: ['./header-landing.component.css']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   hideBar:boolean = true;

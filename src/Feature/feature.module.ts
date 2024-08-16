@@ -6,7 +6,7 @@ import { signupPageComponent } from './signup-page/signup-page.component';
 import { featureRoutingModule } from "./feature-routing.module";
 import { ReactiveFormsModule } from "@angular/forms";
 import { LoginPageComponent } from './login-page/login-page.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './MAIN.home/home.component';
 
 
 @NgModule({

@@ -16,11 +16,15 @@ hideMBAC : boolean = true;
 unsubscribeMBAC: Subscription | any;
 
 ngOnInit(): void {
-
+this.unsubscribeMBAC = this.header.onEmitHamEvent((data: any)=> {
+  this.hideMBAC = data;
+})
 }
 
 
 ngOnDestroy(): void {
-  
+  if (this.unsubscribeMBAC){
+    this.unsubscribeMBAC.unsubsribe();
+  }
 }
 }
