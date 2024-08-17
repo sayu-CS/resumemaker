@@ -13,6 +13,7 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { CircularButtonComponenet } from "./buttons/circular-button/circular-button.component";
 import { mbacComponent } from "./main-body-arrow-content/mbac.component";
 import { MBRVComponent } from "./main-body-resume-view/mbrv.component";
+import { MBRSComponent } from "./main-body-resume-status/mbrs.component";
 
 
 
@@ -27,7 +28,8 @@ import { MBRVComponent } from "./main-body-resume-view/mbrv.component";
                 MainBodyComponent,
                 CircularButtonComponenet,
                 mbacComponent,
-                MBRVComponent
+                MBRVComponent,
+                MBRSComponent
                   ],
     imports:[CommonModule, RouterModule],
     exports:[
@@ -40,7 +42,8 @@ import { MBRVComponent } from "./main-body-resume-view/mbrv.component";
         MainBodyComponent,
         CircularButtonComponenet,
         mbacComponent,
-        MBRVComponent
+        MBRVComponent,
+        MBRSComponent
     ],
 })
 export class sharedmodule {}
